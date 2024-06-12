@@ -21,4 +21,27 @@ class singlyLinkedList{
             head = temp;
         }
     }
+
+    void print(){
+        Node curr = head;
+
+        System.out.print("[ ");
+
+        while (curr != null) {
+            System.out.print(curr.data + "-->");
+            curr = curr.next;
+        }
+
+        System.out.println("null ]");
+    }
+}
+
+public class Test {
+
+    public static void main(String[] args) {
+        singlyLinkedList sl = new singlyLinkedList() ;
+        sl.addFirst(35);
+        sl.addFirst(34);
+        sl.print();
+    }
 }
