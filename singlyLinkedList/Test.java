@@ -36,12 +36,13 @@ class singlyLinkedList{
     }
 }
 
-public class Test {
+ public class Test {
 
     public static void main(String[] args) {
         singlyLinkedList sl = new singlyLinkedList() ;
         sl.addFirst(35);
         sl.addFirst(34);
+        sl.addFirst(56);
         sl.print();
     }
 }
